@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -104,6 +104,9 @@
 					</ul>
 					<div class="clear"></div>
 				</section>
+				<article>
+					Tekst;
+				</article>
 			</section>
 			<div class="clear"></div>
 		</div>

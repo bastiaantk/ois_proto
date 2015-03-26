@@ -41,6 +41,7 @@ a {
 	height: 50px;
 	min-width: 50px;
 	margin-left: 20px;
+	cursor: pointer;
 }
 
 .container > aside.sidebar {
@@ -76,10 +77,9 @@ a {
 
 .container > section.main {
 	float: left;
-	background-color: red;
 	width: calc(100% - 256px);
 }
-.container > section.main > section {
+.container > section.main > section, .container > section.main > article {
 	padding: 20px;
 }
 section.main .quick-nav {
