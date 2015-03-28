@@ -87,14 +87,16 @@ session_start();
 					</ul>
 				</aside>
 				<?php
-				if (isset($_GET['p']) && !emtpy($_GET['p'])) {
-					$file = '/pages/' . $_GET['p'] . '.php';
+				if (1==1) {
+					$file = 'pages/' . $_GET['p'] . '.php';
 					if (file_exists($file)) {
 						include($file);
+					} else {
+						include('pages/404.php');
 					}
 				}
 				else {
-					include('/pages/home.php');
+					include('pages/home.php');
 				}
 				?>
 				<div class="clear"></div>
