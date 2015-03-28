@@ -34,49 +34,33 @@
 		<li>
 			<button class="week"><<</button>
 		</li>
+<?php
+for ($i = 8; $i < 19; $i++):
+?>
 		<li>
-			<a href="">8</a>
+			<a href=""><?php echo $i; ?></a>
 		</li>
-		<li>
-			<a href="">9</a>
 		</li>
-		<li>
-			<a href="">10</a>
-		</li>
-		<li>
-			<a href="">11</a>
-		</li>
-		<li>
-			<a href="">12</a>
-		</li>
-		<li>
-			<a href="">14</a>
-		</li>
-		<li>
-			<a href="">15</a>
-		</li>
-		<li>
-			<a href="">16</a>
-		</li>
-		<li>
-			<a href="">17</a>
-		</li>
-		<li>
-			<a href="">18</a>
-		</li>
+<?php
+endfor;
+?>
 		<li>
 			<button class="week">>></button>
 		</li>
-		<button id="datepicker">Kalender</button>
+		<li>
+			<button id="datepicker">Kalender</button>
+		</li>
 	</ul>
 </div>
 <div class="weekrooster">
 	<h2 class="weeknummer">Weekrooster van week 13 2015: 23 Maart - 29 Maart 2015</h2>
-	<h2 class="dag">Maandag</h2>
+	<table>
+		<tr>
+			<td colspan="7" class="dag">Maandag</td>
+		</tr>
 <?php
 if($_SESSION['logged_in']){
 ?>
-	<table>
 		<tr>
 			<td>13.15 - 15.00</td>
 			<td>INFOB1VAK1</td>
@@ -86,16 +70,16 @@ if($_SESSION['logged_in']){
 			<td><a href="https://www.google.nl/maps/@52.082904,5.178317,17z/data=!3m1!4b1!4m2!3m1!1s0x47c6688387c0f997:0x8f29dda98ecbc486" target="_blank">ANDRO</a></td>
 			<td>C101</td>
 		</tr>
-	</table>
 <?php 
 }
 ?>
-	<h2 class="dag">Dinsdag</h2>
-	<Table>
 		<tr>
+			<td colspan="7" class="dag">Dinsdag</td>
+		</tr>
 <?php
 if($_SESSION['logged_in']){
 ?>
+		<tr>
 			<td>13.15 - 15.00</td>
 			<td>INFOB2VAK2</td>
 			<td><a href="index.php?p=vaksite">VAK 2</a></td>
@@ -112,26 +96,16 @@ if($_SESSION['logged_in']){
 			<td>Groep 3</td>
 			<td><a href="https://www.google.nl/maps/@52.08723,5.1654,17z/data=!3m1!4b1!4m2!3m1!1s0x47c66899b4792659:0x71bd1424c2401f77" target="_blank">BBG</a></td>
 			<td>1.63</td>
-	
+		</tr>
 <?php 
 }
 ?>
-		</tr>
-	</table>
-	<h2 class="dag">Woensdag</h2>
-	<table>
 		<tr>
-<?php
-if($_SESSION['logged_in']){
-?>
-			<td></td>
-<?php 
-}
-?>
+			<td colspan="7" class="dag">Woensdag</td>
 		</tr>
-	</table>
-	<h2 class="dag">Donderdag</h2>
-	<table>
+		<tr>
+			<td colspan="7" class="dag">Donderdag</td>
+		</tr>
 <?php
 if($_SESSION['logged_in']){
 ?>
@@ -174,42 +148,18 @@ if($_SESSION['logged_in']){
 <?php 
 }
 ?>
-	</table>
-	<h2 class="dag">Vrijdag</h2>
-	<table>
-		<tr>	
-<?php
-if($_SESSION['logged_in']){
-?>
-			<td></td>
-<?php 
-}
-?>
-		</tr>
-	</table>
-	<h2 class="dag">Zaterdag</h2>
-	<table>
-		<tr>	
-<?php
-if($_SESSION['logged_in']){
-?>
-			<td></td>
-<?php 
-}
-?>
-		</tr>
-	</table>
-	<h2 class="dag">Zondag</h2>
-	<table>
 		<tr>
+			<td colspan="7" class="dag">Vrijdag</td>
+		</tr>
 <?php
 if($_SESSION['logged_in']){
 ?>
+		<tr>
 			<td></td>
+		</tr>
 <?php 
 }
 ?>
-		</tr>
 	</table>
 </div>
 <button class="planner">Planner</button>
