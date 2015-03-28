@@ -189,3 +189,56 @@ section.main {
 	width: 100% !important;
 }
 }
+
+section.rooster .vak, .vakkeuze, .weeknav{
+	display:block;
+	padding:2px;
+	font-size:.9em;
+}
+section.rooster .vakkeuze > select, .weeknav > ul > li {
+	display:inline-block;
+}
+section.rooster .verwijder, #datepicker{
+	display:inline-block;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+section.rooster .vakkeuze > input[type="submit"], .verwijder, #datepicker, .planner, .week, .planner{
+	height:25px;
+	min-height:25px;
+	cursor:pointer;
+}
+section.rooster .weeknummer, .weeknav, .weekrooster{
+	margin-left:auto;
+	margin-right:auto;
+}
+section.rooster .weeknav{
+	max-width:300px;
+	min-width:300px;
+}
+section.rooster .weeknummer, .weekrooster{
+	max-width:500px;
+	min-width:415px;
+}
+section.rooster .weekrooster > table {
+	border:0px;
+	padding:2px;
+	font-size:.8em;
+}
+section.rooster td {
+	padding:2px;
+	vertical-align:middle;
+	width:60px;
+}
+section.rooster td > a:hover{
+	text-decoration:underline;
+}
+section.rooster tr {
+	padding: 20px;
+}
+section.rooster .weekrooster > h2 {
+	font-weight:600;
+	padding:2px;
+	font-size:.9em;
+}
+	

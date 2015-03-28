@@ -22,7 +22,7 @@
 		</ul>
 		<div class="clear"></div>
 	</section>
-	<article>
-	Tekst;
-	</article>
+	<section class="rooster">
+		<?php include('rooster.php'); ?>
+	</section>
 </section>

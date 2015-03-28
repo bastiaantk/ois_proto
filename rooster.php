@@ -132,10 +132,10 @@ if($_SESSION['logged_in']){
 	</table>
 	<h2 class="dag">Donderdag</h2>
 	<table>
-		<tr>
 <?php
 if($_SESSION['logged_in']){
 ?>
+		<tr>
 			<td>9.00 - 10.45</td>
 			<td>INFOB1VAK1</td>
 			<td><a href="index.php?p=vaksite">VAK 1</a></td>
@@ -170,10 +170,10 @@ if($_SESSION['logged_in']){
 			<td>Groep 3</td>
 			<td><a href="https://www.google.nl/maps/@52.08723,5.1654,17z/data=!3m1!4b1!4m2!3m1!1s0x47c66899b4792659:0x71bd1424c2401f77" target="_blank">BBG</a></td>
 			<td>1.63</td>
+		</tr>
 <?php 
 }
 ?>
-		</tr>
 	</table>
 	<h2 class="dag">Vrijdag</h2>
 	<table>
