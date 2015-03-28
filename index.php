@@ -87,7 +87,7 @@ session_start();
 					</ul>
 				</aside>
 				<?php
-				if (1==1) {
+				if (isset($_GET['p']) && !empty($_GET['p'])) {
 					$file = 'pages/' . $_GET['p'] . '.php';
 					if (file_exists($file)) {
 						include($file);
