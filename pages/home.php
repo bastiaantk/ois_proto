@@ -23,6 +23,6 @@
 		<div class="clear"></div>
 	</section>
 	<section class="rooster">
-		<?php include('rooster.php'); ?>
+		<?php include('includes/rooster.php'); ?>
 	</section>
 </section>
