@@ -28,6 +28,7 @@ session_start();
 				</div>
 
 				<div class="language popup-menu">
+					<h2>Vertalen</h2>
 					<button data-lang="english" class="english">English</button>
 					<button data-lang="nederlands" class="nederlands">Nederlands</button>
 					<div id="google_translate_element"></div>
@@ -40,31 +41,44 @@ session_start();
 				</div>
 
 				<div class="notifications popup-menu">
+					<h2>Notificaties</h2>
 					<ul>
-						<li>
-							<span class="message"></span>
-							<span class="timestamp"></span>
+						<li class="notification">
+							<span class="message">Geen bericht, goed bericht</span>
+							<span class="timestamp">16:41 | 31-03-2015</span>
 						</li>
-						<li>
-							<span class="message"></span>
-							<span class="timestamp"></span>
+						<li class="notification">
+							<span class="message">Beoordeling binnen (B1OIS)</span>
+							<span class="timestamp">16:41 | 31-03-2015</span>
 						</li>
 					</ul>
 				</div>
 
 				<div class="login popup-menu">
-					<form>
-						<input type="text" name="username">
-						<input type="password" name="password">
+					<h2>Login</h2>
+					<form action="login.php">
+						<span class="error"></span>
+						<label for="login-username">Solis-id</label>
+						<input type="text" id="login-username" name="username" placeholder="1234567">
+						<label for="login-password">Password</label>
+						<input type="password" id="login-password" name="password" placeholder="goed/fout">
 						<input type="submit" value="Login">
+						<a href="#" class="forgot-password">Wachtwoord kwijt?</a>
 					</form>
 				</div>
 
 				<div class="search popup-menu">
-					<form>
-						<input type="text" name="query">
+					<h2>Zoeken</h2>
+					<form action="#">
+						<input type="search" name="query">
 						<input type="submit" value="Zoek">
 					</form>
+					<ul class="quick">
+						<li><a href="#">Zoeklink 1</a></li>
+						<li><a href="#">Lorem</a></li>
+						<li><a href="#">Ipsum</a></li>
+						<li><a href="#">Test</a></li>
+					</ul>
 				</div>
 
 				<div class="clear"></div>
@@ -80,14 +94,18 @@ session_start();
 							<ul>
 							<li>
 								<select>
-									<optgroup label="Jaar 1">
+									<optgroup label="Eerste jaar">
 									<option disabled hidden selected>Kies een vak</option>
 									<option value="db">Databases</option>
 									<option value="b1ois">Ontwerpen interactieve systemen</option>
 									<option value="b2wt">Webtechnologie</option>
 									</optgroup>
-									<optgroup label="Jaar 2">
-									<optgroup label="Jaar 3">
+									<optgroup label="Tweede jaar">
+									
+									</optgroup>
+									<optgroup label="Derde jaar">
+									
+									</optgroup>
 								</select>
 							</li>
 							<?php if ($_SESSION['logged_in']) { ?>

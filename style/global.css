@@ -17,6 +17,20 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+select, button, input {
+	padding: 10px;
+	border-radius: 0px;
+	border: 1px solid #CCC;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	background-color: #FFFFFF;
+}
+a.button, button {
+	background-color: #ffcd00;
+	font-weight: 800;
+	text-transform: uppercase;
+}
 
 .container {
 	background-color: #FFFFFF;
@@ -115,8 +129,8 @@ header div.popup-menu.search .quick li a:hover {
 	text-decoration: underline;
 }
 header div.popup-menu.language {
-	width: 160px;
-	right: 200px;
+	width: 170px;
+	right: 180px;
 }
 header div.popup-menu.language button {
 	height: 50px;
@@ -133,6 +147,8 @@ header div.popup-menu.language button {
 	font-size: inherit;
 	font-family: inherit;
 	font-weight: inherit;
+	font-weight: inherit;
+	text-transform: none;
 }
 header div.popup-menu.language button:hover {
 	background-color: #EFEFEF;
@@ -195,6 +211,8 @@ header div.popup-menu.notifications .notification {
 	font-family: inherit;
 	background-color: transparent;
 	color: #666666;
+	font-weight: inherit;
+	text-transform: none;
 }
 .container > header .menu button:hover {
 	background-color: #EFEFEF;
@@ -223,6 +241,7 @@ header div.popup-menu.notifications .notification {
 }
 .container > header .menu button.notifications {
 	background-image: url('images/icons/notifications.png');
+	position: relative;
 }
 
 .container > .content {
@@ -371,7 +390,9 @@ footer img {
 section.rooster .vak, .vakkeuze, .weeknav{
 	display:block;
 	padding:2px;
-	font-size:.9em;
+}
+section.rooster .vakkeuze input {
+	margin-right: 10px;
 }
 section.rooster .vakkeuze > select, .weeknav > ul > li {
 	display:inline-block;
@@ -381,43 +402,76 @@ section.rooster .verwijder, #datepicker{
 	text-indent:-9999px;
 	cursor:pointer;
 }
-section.rooster .vakkeuze > input[type="submit"], .verwijder, #datepicker, .planner, .week, .planner{
-	height:25px;
-	min-height:25px;
+section.rooster .vakkeuze > input[type="submit"], .verwijder, #datepicker, .planner, .week, .planner, a.button {
 	cursor:pointer;
+	background-color: #ffcd00;
+	font-weight: 800;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+	border: 0px;
+}
+section.rooster .button {
+	float: right;
+	margin-bottom: 20px;
+}
+section.rooster .vakkeuze > input[type="submit"]:hover, .verwijder, #datepicker:hover, .planner:hover, .week:hover, .planner:hover, a.button:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	text-decoration: none !important; 
+}
+section.rooster .vakken {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+section.rooster .vak {
+	width: 300px;
+	display: block;
+	clear: both;
+	padding: 10px;
+}
+section.rooster .vak button {
+	float: right;
+}
+section.rooster .vak .verwijder {
+	padding: 0px;
+	height: 16px;
+	width: 16px;
+	background-color: transparent;
+	background-image: url('images/icons/delete.png');
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 section.rooster .weeknummer, .weeknav, .weekrooster{
 	margin-left:auto;
 	margin-right:auto;
 }
-section.rooster .weeknav{
-	max-width:300px;
-	min-width:300px;
+section.rooster .weeknav {
+	text-align: center;
 }
-section.rooster .weeknummer, .weekrooster{
-	max-width:500px;
-	min-width:415px;
+section.rooster .weeknav a {
+	display: block;
+	margin-left: .3em;
+	margin-right: .3em;
 }
-section.rooster .weekrooster > table {
-	border:0px;
-	padding:2px;
-	font-size:.8em;
+section.rooster table {
+	width: 100%;
+}
+section.rooster table td[colspan="7"] {
+	font-weight: 800;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 section.rooster td {
-	padding:2px;
-	vertical-align:middle;
+	padding: 5px;
 	width:60px;
 }
 section.rooster td > a:hover{
 	text-decoration:underline;
 }
-section.rooster tr {
-	padding: 20px;
-}
-section.rooster .weekrooster > h2 {
-	font-weight:600;
-	padding:2px;
-	font-size:.9em;
+section.rooster > h2 {
+	display: block;
 }
 
 section.vaklijst .column {

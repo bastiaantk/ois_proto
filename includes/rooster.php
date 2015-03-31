@@ -1,15 +1,15 @@
 <h1>Rooster</h1>
 <form class="vakkeuze">
 	<select name="stjaar">
-		<option value=""></option>
+		<option hidden selected disabled>Kies jaar</option>
 		<option value="1">eerste jaar</option>
-		<option value="2" selected="">tweede+derde jaar Bachelor</option>
+		<option value="2">tweede+derde jaar Bachelor</option>
 		<option value="4">masterfase</option>
 		<option value="a">alle vakken</option>
 		<option value="b">alle vakken (uitgebreid)</option>
 	</select>
 	<select name="vakken">
-		<option value=""></option>
+		<option hidden selected disabled>Kies vak</option>
 		<option value="1">vak 1</option>
 		<option value="2">vak 2</option>
 		<option value="3">vak 3</option>
@@ -19,17 +19,20 @@
 <?php
 	if($_SESSION['logged_in']){
 ?>
+<div class="vakken">
 	<div class="vak">
-		VAK 1
-		<button class="verwijder">X</button>
+		Ontwerpen interactieve systemen
+		<button class="verwijder" title="Verwijderen">X</button>
 	</div>
 	<div class="vak">
-		VAK 2
-		<button class="verwijder">X</button>
+		Databases
+		<button class="verwijder" title="Verwijderen">X</button>
 	</div>
+</div>
 <?php
 }
 ?>
+<h2 class="weeknummer">Rooster week 13 2015: 23 Maart - 29 Maart 2015</h2>
 <div class="weeknav">
 	<ul>
 		<li>
@@ -54,7 +57,6 @@ endfor;
 	</ul>
 </div>
 <div class="weekrooster">
-	<h2 class="weeknummer">Weekrooster van week 13 2015: 23 Maart - 29 Maart 2015</h2>
 	<table>
 		<tr>
 			<td colspan="7" class="dag">Maandag</td>
@@ -163,4 +165,4 @@ if($_SESSION['logged_in']){
 ?>
 	</table>
 </div>
-<button class="planner">Planner</button>
+<a href="https://betaplanner.science.uu.nl/" class="button">Betaplanner</a>

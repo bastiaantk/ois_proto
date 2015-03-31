@@ -40,4 +40,8 @@ $(document).ready(function () {
 			$(this).find('.error').text('Onjuiste combinatie van wachtwoord/gebruikersnaam').show();
 		}
 	});
+
+	$('aside .vaksites select').on('change', function () {
+		document.location.href = 'index.php?p=vaksites&vak=' + $(this).find('option:selected').prop('value');
+	});
 });
