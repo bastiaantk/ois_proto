@@ -34,12 +34,140 @@ a {
 .container > header div.popup-menu {
 	display: none;
 	position: absolute;
+	position: absolute;
+	right: 20px;
+	background-color: #FFFFFF;
+	padding: 20px;
+	border: 2px solid #000000;
+	margin-top: 10px;
 }
-.container > header input[type="submit"], .container > header button {
+header div.popup-menu.login {
+	width: 300px;
+}
+header div.popup-menu h2 {
+	font-size: 24px;
+	margin-bottom: 1em;
+}
+header div.popup-menu label {
+	display: block;
+	margin-bottom: .5em;
+}
+header div.popup-menu input {
+	display: block;
+	width: 280px;
+	outline: 0px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+header div.popup-menu input[type="submit"] {
+	background-color: #ffcd00;
+	color: #000000;
+	font-size: inherit;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: inherit;
+	border: 0px;
+	cursor: pointer;
+	display: block;
+	float: right;
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 0px;
+}
+header div.popup-menu input[type="submit"]:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+header div.popup-menu.login .error {
+	color: rgb(255, 62, 0);
+	padding-bottom: 20px;
+	display: block;
+}
+header div.popup-menu.login .forgot-password {
+	float: right;
+	padding: 10px;
+	display: block;
+}
+header div.popup-menu.login .forgot-password:hover {
+	text-decoration: underline;
+}
+header div.popup-menu.login .forgot-password:after {
+	content: " | ";
+	text-decoration: none !important;
+}
+header div.popup-menu.search input[type="submit"] {
+	margin-bottom: 20px;
+}
+header div.popup-menu.search .quick {
+	display: block;
+	column-count: 2;
+	clear: both;
+	padding-top: 20px;
+	border-top: 1px solid #000000;
+}
+header div.popup-menu.search .quick li {
+	line-height: 1.3em;
+	width: 50%;
+	float: left;
+}
+header div.popup-menu.search .quick li a:hover {
+	text-decoration: underline;
+}
+header div.popup-menu.language {
+	width: 160px;
+	right: 200px;
+}
+header div.popup-menu.language button {
+	height: 50px;
+	background-image: url('images/icons/language.png');
+	background-repeat: no-repeat;
+	text-indent: 44px;
+	background-position: 12px center;
+	border: 0px;
+	background-color: transparent;
+	cursor: pointer;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+header div.popup-menu.language button:hover {
+	background-color: #EFEFEF;
+}
+header div.popup-menu.language button.english {
+	background-image: url('images/icons/language-en.png');
+}
+#google_translate_element {
+	float: right !important;
+	clear: both;
+}
+header div.popup-menu.notifications {
+	right: 100px;
+}
+header div.popup-menu.notifications .notification {
+	display: block;
+	width: 300px;
+	border-bottom: 1px solid #EFEFEF;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.notification .timestamp {
+	color: #666666;
+	font-size: .8em;
+	display: block;
+	margin-top: 2em;
+	clear: both;
+	text-align: right;
+}
+
+.container > header .menu input[type="submit"], .container > header .menu button {
 	text-indent: -9999px;
 	display: block;
 	border: 0px;
-	background-color: #39F;
+	background-color: 
 }
 .container > header input[type="text"], .container > header input[type="password"] {
 	background-color: #E9E9E9;
