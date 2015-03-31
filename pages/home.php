@@ -3,7 +3,7 @@
 		<h1>Direct naar</h1>
 		<ul class="nav">
 			<li>
-				<a href="index.php">Informatie</a>
+				<a href="index.php?p=informatie">Informatie</a>
 			</li>
 			<li>
 				<a href="index.php?p=vaksites">Vaksites</a>
@@ -17,14 +17,14 @@
 			</li>
 			<?php } ?>
 			<li>
-				<a href="index.php">Nieuws</a>
+				<a href="index.php?p=nieuws">Nieuws</a>
 			</li>
 			<?php if ($_SESSION['logged_in']) { ?>
 			<li>
-				<a href="index.php">Opdrachten</a>
+				<a href="index.php?p=opdracht">Opdrachten</a>
 			</li>
 			<li>
-				<a href="index.php">Resultaten</a>
+				<a href="index.php?p=resultaten">Resultaten</a>
 			</li>
 			<?php } ?>
 		</ul>

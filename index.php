@@ -120,17 +120,17 @@ session_start();
 						</li>
 						<?php if ($_SESSION['logged_in']) { ?>
 						<li>
-							<a href="index.php">Opdrachten</a>
+							<a href="index.php?p=opdrachten">Opdrachten</a>
 						</li>
 						<li>
-							<a href="index.php">Resultaten</a>
+							<a href="index.php?p=resultaten">Resultaten</a>
 						</li>
 						<?php } ?>
 						<li>
-							<a href="index.php">Nieuws</a>
+							<a href="index.php?p=nieuws">Nieuws</a>
 						</li>
 						<li>
-							<a href="index.php">Informatie</a>
+							<a href="index.php?p=informatie">Informatie</a>
 						</li>
 					</ul>
 				</aside>

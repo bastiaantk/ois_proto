@@ -245,7 +245,8 @@ header div.popup-menu.notifications .notification {
 }
 
 .container > .content {
-	background-color: #ffcd00;
+	background-color: #ffffff;
+	position: relative;
 }
 
 .content > aside.sidebar {
@@ -253,8 +254,10 @@ header div.popup-menu.notifications .notification {
 	width: 256px;
 	color: #000000;
 	float: left;
-	position: relative;
 	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 }
 .content > aside.sidebar li li {
 	background-color: rgb(255, 188, 0);
@@ -302,7 +305,7 @@ header div.popup-menu.notifications .notification {
 }
 
 .content > section.main {
-	float: left;
+	float: right;
 	width: calc(100% - 256px);
 	min-width: 256px;
 	margin-left: auto;
@@ -381,6 +384,7 @@ section.main .quick-nav .nav a:hover {
 aside.sidebar,
 section.main {
 	width: 100% !important;
+	position: relative !important;
 }
 footer img {
 	width: 100%;
