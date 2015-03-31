@@ -44,4 +44,15 @@ $(document).ready(function () {
 	$('aside .vaksites select').on('change', function () {
 		document.location.href = 'index.php?p=vaksites&vak=' + $(this).find('option:selected').prop('value');
 	});
+
+	console.log();
+
+	$('.container > .content').css({
+		'min-height': $('.container aside').outerHeight()
+	});
+	$('.container aside').css({
+		'top': 0,
+		'bottom': 0,
+		'min-height': '100%'
+	});
 });

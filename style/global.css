@@ -33,7 +33,7 @@ a.button, button {
 }
 
 .container {
-	background-color: #FFFFFF;
+	background-color: #000000;
 	max-width: 1200px;
 	min-height: 100%;
 	margin-left: auto;
@@ -44,16 +44,17 @@ a.button, button {
 .container > header {
 	padding: 20px;
 	padding-left: 30px;
+	background-color: #FFFFFF;
 }
 .container > header div.popup-menu {
 	display: none;
-	position: absolute;
 	position: absolute;
 	right: 20px;
 	background-color: #FFFFFF;
 	padding: 20px;
 	border: 2px solid #000000;
 	margin-top: 10px;
+	z-index: 999;
 }
 header div.popup-menu.login {
 	width: 300px;
@@ -256,8 +257,6 @@ header div.popup-menu.notifications .notification {
 	float: left;
 	overflow: hidden;
 	position: absolute;
-	top: 0;
-	bottom: 0;
 }
 .content > aside.sidebar li li {
 	background-color: rgb(255, 188, 0);
