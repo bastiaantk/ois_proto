@@ -41,6 +41,14 @@ a.button, button {
 	position: relative;
 }
 
+.hero {
+	background-image: url('images/hero.jpg');
+	height: 240px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .container > header {
 	padding: 20px;
 	padding-left: 30px;

@@ -83,6 +83,9 @@ session_start();
 
 				<div class="clear"></div>
 			</header>
+			<div class="hero">
+			
+			</div>
 			<div class="content">
 				<aside class="sidebar">
 					<ul class="nav">
