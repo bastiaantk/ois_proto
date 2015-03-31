@@ -29,6 +29,7 @@
 	
 	<div class="clear"></div>
 </section>
+<?php include('includes/vaksite_inschrijving.php'); ?>
 <section>
 	<h2 class="header">Databases 2014-2015</h2>
 

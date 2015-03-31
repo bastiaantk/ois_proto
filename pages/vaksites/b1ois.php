@@ -26,7 +26,7 @@
 	
 	<div class="clear"></div>
 </section>
-
+<?php include('includes/vaksite_inschrijving.php'); ?>
 <section>
 	<h2>Ontwerpen interactive systemen</h2>
 	<p>Tekst</p>
