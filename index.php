@@ -9,13 +9,14 @@ session_start();
 		<title>Universiteit Utrecht - Onderwijs informatica en informatiekunde 2014/2015</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="style/global.css">
+		<meta name="google-translate-customization" content="ed6e67f89e5eb72-f3c62d562943b411-g951d2ee9c06c40de-24"></meta>
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<img src="images/logo-cs.png" alt="Onderwijs informatica en informatiekunde">
+				<a href="index.php"><img src="images/logo-cs.png" alt="Onderwijs informatica en informatiekunde"></a>
 				<div class="menu">
-					<button class="language">Taal kiezen</button>
+					<button class="language">Translate</button>
 					<?php if ($_SESSION['logged_in']) { ?>
 					<button class="notifications">Nofiticaties</button>
 					<button class="logout">Log uit</button>
@@ -29,6 +30,13 @@ session_start();
 				<div class="language popup-menu">
 					<button data-lang="english" class="english">English</button>
 					<button data-lang="nederlands" class="nederlands">Nederlands</button>
+					<div id="google_translate_element"></div>
+					<script type="text/javascript">
+					function googleTranslateElementInit() {
+					  new google.translate.TranslateElement({pageLanguage: 'nl', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+					}
+					</script>
+					<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				</div>
 
 				<div class="notifications popup-menu">
@@ -67,8 +75,30 @@ session_start();
 						<li>
 							<a href="index.php">Rooster</a>
 						</li>
-						<li>
-							<a href="index.php?p=vaksite">Vaksites</a>
+						<li class="vaksites">
+							<a href="index.php?p=vaksites">Vaksites</a>
+							<ul>
+							<li>
+								<select>
+									<optgroup label="Jaar 1">
+									<option disabled hidden selected>Kies een vak</option>
+									<option value="db">Databases</option>
+									<option value="b1ois">Ontwerpen interactieve systemen</option>
+									<option value="b2wt">Webtechnologie</option>
+									</optgroup>
+									<optgroup label="Jaar 2">
+									<optgroup label="Jaar 3">
+								</select>
+							</li>
+							<?php if ($_SESSION['logged_in']) { ?>
+							<li>
+								<a href="index.php?p=vaksites&vak=b1ois">Ontwerpen interactieve systemen</a>
+							</li>
+							<li>
+								<a href="index.php?p=vaksites&vak=db">Databases</a>
+							</li>
+							<?php } ?>
+							</ul>
 						</li>
 						<?php if ($_SESSION['logged_in']) { ?>
 						<li>

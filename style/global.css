@@ -11,6 +11,7 @@ body {
 	background-color: #EFEFEF;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+	min-width: 320px;
 }
 a {
 	color: inherit;
@@ -71,7 +72,12 @@ a {
 	background-color: #EFEFEF;
 }
 .container > header .menu button.language {
-	background-color: blue;
+	min-width: 0px;
+	background-image: url('images/icons/language.png');
+	background-size: auto;
+	text-indent: 54px;
+	background-position: 12px center;
+	padding-right: 12px;
 }
 .container > header .menu button.login, .container > header .menu button.logout {
 	text-indent: 40px;
@@ -101,12 +107,29 @@ a {
 	color: #000000;
 	float: left;
 	position: relative;
+	overflow: hidden;
+}
+.content > aside.sidebar li li {
+	background-color: rgb(255, 188, 0);
+	display: block;
+	border-bottom: 1px solid #ffcd00;
+	padding-left: 20px;
+}
+.content > aside.sidebar li.vaksites select {
+	padding: 10px;
+	width: 180px;
+	margin: 20px;
+	margin-left: 40px;
 }
 .content > aside.sidebar a {
 	display: block;
 	padding: 30px;
 	padding-left: 20px;
 	border-bottom: 1px solid rgb(255, 188, 0);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 18px;
 }
 .content > aside.sidebar a:before {
 	content: "";
@@ -138,12 +161,35 @@ a {
 	margin-left: auto;
 	background-color: #FFFFFF;
 }
-.content > section.main > section, .container > section.main > article {
+.content > section.main > section,
+.container > section.main > article {
 	padding: 20px;
+	padding-bottom: 40px;
+}
+.content > section.main > section a:hover, .container > section.main > article a:hover {
+	text-decoration: underline;
+}
+.content > section h1 {
+	font-size: 34px;
+	font-weight: 300;
+	margin-right: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.content > section h2 {
+	font-size: 24px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+.content > section h3 {
+	font-size: 20px;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 section.main .quick-nav {
 	background-color: #000000;
+	padding-bottom: 20px !important;
 }
 section.main .quick-nav h1 {
 	float: left;
@@ -171,6 +217,7 @@ section.main .quick-nav .nav a {
 }
 section.main .quick-nav .nav a:hover {
 	background-color: #ffcd00;
+	text-decoration: none;
 }
 
 .container > footer {
@@ -187,6 +234,9 @@ section.main .quick-nav .nav a:hover {
 aside.sidebar,
 section.main {
 	width: 100% !important;
+}
+footer img {
+	width: 100%;
 }
 }
 
@@ -241,4 +291,20 @@ section.rooster .weekrooster > h2 {
 	padding:2px;
 	font-size:.9em;
 }
-	
+
+section.vaklijst .column {
+	width: 33%;
+	box-sizing: border-box;
+	float: left;
+	min-width: 280px;
+	padding-bottom: 30px;
+}
+section.vaklijst .column h2 {
+	font-size: 24px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+section.vaklijst li {
+	margin-bottom: .6em;
+	margin-top: .6em;
+}
