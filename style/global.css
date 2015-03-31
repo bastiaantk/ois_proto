@@ -380,17 +380,6 @@ section.main .quick-nav .nav a:hover {
 	clear: both;
 }
 
-@media (max-width: 600px) {
-aside.sidebar,
-section.main {
-	width: 100% !important;
-	position: relative !important;
-}
-footer img {
-	width: 100%;
-}
-}
-
 section.rooster .vak, .vakkeuze, .weeknav{
 	display:block;
 	padding:2px;
@@ -467,9 +456,15 @@ section.rooster table td[colspan="7"] {
 	padding-bottom: 10px;
 	padding-top: 20px;
 }
+section.rooster tr {
+	border-bottom: 1px solid #EFEFEF;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 section.rooster td {
 	padding: 5px;
-	width:60px;
+	min-width:60px;
 }
 section.rooster td > a:hover{
 	text-decoration:underline;
@@ -504,4 +499,21 @@ section.inschrijving button {
 	margin: 0px;
 	border: 0px;
 	cursor: pointer;
+}
+
+/*Responsive schnitzel*/
+@media (max-width: 600px) {
+aside.sidebar,
+section.main {
+	width: 100% !important;
+	position: relative !important;
+}
+footer img {
+	width: 100%;
+}
+table tr, td{
+	display: block;
+	float: left;
+	clear: both;
+}
 }
