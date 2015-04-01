@@ -48,7 +48,7 @@ session_start();
 							<span class="timestamp">16:41 | 31-03-2015</span>
 						</li>
 						<li class="notification">
-							<span class="message">Beoordeling binnen (B1OIS)</span>
+							<a href="index.php?p=beoordeling"><span class="message">Beoordeling binnen (B1OIS)</span></a>
 							<span class="timestamp">16:41 | 31-03-2015</span>
 						</li>
 					</ul>

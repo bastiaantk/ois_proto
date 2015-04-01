@@ -55,4 +55,29 @@ $(document).ready(function () {
 		'bottom': 0,
 		'min-height': '100%'
 	});
+
+	$('.vak').on('mouseover', function (e) {
+		var parentOffset = $(this).parent().offset(); 
+		var relX = e.pageX - parentOffset.left + 260;
+		var relY = e.pageY - parentOffset.top + 110;
+		$('.hidden.vak').show().css({
+			top: relY,
+			left: relX
+		});
+	});
+	$('.vak').on('mouseout', function () {
+		$('.hidden.vak').hide();
+	});
+	$('.resultaat').on('mouseover', function (e) {
+		var parentOffset = $(this).parent().offset(); 
+		var relX = e.pageX - parentOffset.left + 260;
+		var relY = e.pageY - parentOffset.top + 110;
+		$('.hidden.res').show().css({
+			top: relY,
+			left: relX
+		});
+	});
+	$('.resultaat').on('mouseout', function () {
+		$('.hidden.res').hide();
+	});
 });

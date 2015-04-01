@@ -1,3 +1,5 @@
+<section class="main beoordeling">
+<section>
 <h1>Beoordeling</h1>
 <div class="overzicht">
 	<table>
@@ -52,3 +54,5 @@
 	<input type="submit" value="Reageren">
 </form>
 </div>
+</section>
+</section>

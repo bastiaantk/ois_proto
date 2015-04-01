@@ -1,3 +1,4 @@
+<section class="main">
 <h1>Resultaten</h1>
 <table>
 	<tr>
@@ -104,3 +105,4 @@
 		</tr>
 	</table>
 </div>
+</section>
