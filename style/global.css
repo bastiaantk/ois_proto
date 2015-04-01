@@ -402,7 +402,7 @@ section.rooster .verwijder, #datepicker{
 	text-indent:-9999px;
 	cursor:pointer;
 }
-section.rooster .vakkeuze > input[type="submit"], .verwijder, #datepicker, .planner, .week, .planner, a.button {
+section.rooster .vakkeuze > input[type="submit"], .verwijder, #datepicker, .planner, .week, .planner, .button {
 	cursor:pointer;
 	background-color: #ffcd00;
 	font-weight: 800;
@@ -554,6 +554,83 @@ table.rapport .vak, table.rapport .resultaat {
 	background-color: #FFFFFF;
 	line-height: 1.3em;
 }
+.main.beoordeling table {
+	width: 100%;
+}
+.main.beoordeling .column {
+	width: 50%;
+	float: left;
+}
+.main.beoordeling .column.right {
+	float: right;
+}
+.main.beoordeling .downloads a {
+	margin-bottom: 10px;
+	display: block;
+}
+.main.beoordeling .downloads a:before {
+	content: "";
+	background-color: red;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	box-sizing: border-box;
+	padding: 7px;
+}
+.main.beoordeling .downloads a.docx:before {
+	content: "W";
+	color: #FFFFFF;
+	background-color: #3877b6;
+}
+.main.beoordeling .downloads a.pdf:before {
+	background-color: rgb(255, 62, 0);
+	color: #FFFFFF;
+	content: "PDF";
+	font-size: .6em;
+	padding: 5px;
+	padding-top: 10px;
+}
+.main.beoordeling .opmerkingen .wie {
+	font-weight: bold;
+}
+.main.beoordeling .opmerkingen p {
+	display: inline;
+}
+.main.beoordeling textarea {
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #CCC;
+	height: 100px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+.main.inleveren label, .main.inleveren input {
+	margin-right: 20px;
+}
+.main.inleveren .button {
+	float: right;
+}
+.main.inleveren div {
+	margin-bottom: 20px;
+}
+.main.inleveren input[type="file"] {
+	width: 50%;
+	box-sizing: border-box;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+}
+.main.inleveren textarea {
+	width: 50%;
+	height: 300px;
+	box-sizing: border-box;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+}
+
 
 .hidden {
 	display: none;

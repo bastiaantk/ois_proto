@@ -57,7 +57,7 @@ $(document).ready(function () {
 	});
 
 	$('.vak').on('mouseover', function (e) {
-		var parentOffset = $(this).parent().offset(); 
+		var parentOffset = $(this).parent().offset();
 		var relX = e.pageX - parentOffset.left + 260;
 		var relY = e.pageY - parentOffset.top + 110;
 		$('.hidden.vak').show().css({
@@ -69,7 +69,7 @@ $(document).ready(function () {
 		$('.hidden.vak').hide();
 	});
 	$('.resultaat').on('mouseover', function (e) {
-		var parentOffset = $(this).parent().offset(); 
+		var parentOffset = $(this).parent().offset();
 		var relX = e.pageX - parentOffset.left + 260;
 		var relY = e.pageY - parentOffset.top + 110;
 		$('.hidden.res').show().css({
@@ -79,5 +79,13 @@ $(document).ready(function () {
 	});
 	$('.resultaat').on('mouseout', function () {
 		$('.hidden.res').hide();
+	});
+
+	$('#practicum-search').on('keydown', function () {
+		if ($(this).val().length > 3) {
+			$('#practicum-nummer').val('3429834');
+		} else {
+			$('#practicum-nummer').val('');
+		}
 	});
 });
